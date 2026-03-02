@@ -24,7 +24,7 @@ app.post("/cart/add", (req, res) => {
   const { productId } = req.body || {};
 
   if (!productId) {
-    return res.status(400).json({ error: "productId is required" });
+    return res.status(400).json({ error: "productId is required " });
   }
 
   const product = productCatalog[productId];
