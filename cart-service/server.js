@@ -29,7 +29,7 @@ app.post("/cart/add", (req, res) => {
 
   const product = productCatalog[productId];
   if (!product) {
-    return res.status(404).json({ error: "Product not found" });
+    return res.status(404).json({ error: "Product not found " });
   }
 
   const existing = cart.find((item) => item.id === productId);
